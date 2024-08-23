@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "src": "frontend/",
+      "use": "@vercel/static-build",
+      "buildCommand": "npm run build",
+      "outputDirectory": "frontend/dist"
+    },
+    {
+      "src": "backend/Nodejs-express-part-a/",
+      "use": "@vercel/node"
+    }
+  ]
+}
