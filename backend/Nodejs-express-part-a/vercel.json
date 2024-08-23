@@ -1,15 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "backend/Nodejs-express-part-a/api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/backend/Nodejs-express-part-a/api/$1"
-    }
-  ]
-}
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
