@@ -8,7 +8,9 @@ morgan.token("new_user", function getNewUser(request: Request) {
   return JSON.stringify(request.body);
 });
 app.use(
-  morgan(":method :url :status :res[content-length] - :response-time ms :new_user")
+  morgan(
+    ":method :url :status :res[content-length] - :response-time ms :new_user"
+  )
 );
 let persons = [
   {
